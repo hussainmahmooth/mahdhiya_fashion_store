@@ -278,7 +278,7 @@ class _ProductCard extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned.fill(
-                  child: Image.asset(
+                  child: AppImage(
                     imageUrl,
                     fit: BoxFit.cover,
                   ),

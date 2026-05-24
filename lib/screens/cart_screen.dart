@@ -216,6 +216,7 @@ class _CartItem extends StatelessWidget {
             ),
             clipBehavior: Clip.antiAlias,
             child: Image.asset(item.productImage, fit: BoxFit.cover),
+                    child: AppImage(item.productImage, fit: BoxFit.cover),
           ),
           const SizedBox(width: 16),
           Expanded(

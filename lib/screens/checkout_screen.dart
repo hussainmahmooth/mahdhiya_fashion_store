@@ -411,6 +411,7 @@ class _SummaryItem extends StatelessWidget {
           ),
           clipBehavior: Clip.antiAlias,
           child: Image.asset(imageUrl, fit: BoxFit.cover),
+                  child: AppImage(imageUrl, fit: BoxFit.cover),
         ),
         const SizedBox(width: 16),
         Expanded(

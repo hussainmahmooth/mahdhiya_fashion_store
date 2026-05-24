@@ -156,7 +156,7 @@ class _WishlistItemCard extends StatelessWidget {
                   color: const Color(0xFFF6F3F2),
                 ),
                 clipBehavior: Clip.antiAlias,
-                child: Image.asset(imageUrl, fit: BoxFit.cover, height: double.infinity, width: double.infinity),
+                child: AppImage(imageUrl, fit: BoxFit.cover, height: double.infinity, width: double.infinity),
               ),
               Positioned(
                 top: 12,
