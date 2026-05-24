@@ -118,7 +118,7 @@ class AppProvider extends ChangeNotifier {
       }
       return false;
     } catch (e) {
-      _errorMessage = e.toString();
+      _errorMessage = "SignUp Error: ${e.toString()}";
       _isLoading = false;
       notifyListeners();
       return false;

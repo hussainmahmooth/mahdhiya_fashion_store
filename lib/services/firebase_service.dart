@@ -24,22 +24,32 @@ class FirebaseService {
 
       if (userCredential.user != null) {
         // 2. Store user details in Firestore
-        UserModel newUser = UserModel(
-          fullName: fullName,
-          email: email,
-          createdAt: DateTime.now(),
-        );
+        try {
+          UserModel newUser = UserModel(
+            fullName: fullName,
+            email: email,
+            createdAt: DateTime.now(),
+          );
 
-        await _db.collection('users').doc(userCredential.user!.uid).set(
-          newUser.toMap(password),
-        );
+          await _db.collection('users').doc(userCredential.user!.uid).set(
+            newUser.toMap(password),
+          );
+        } catch (firestoreError) {
+          debugPrint('Firestore Error during signup: $firestoreError');
+          // Even if Firestore fails, the auth succeeded. We can optionally throw here
+          // throw 'Account created, but failed to save profile data.';
+        }
       }
       
       return userCredential;
     } on FirebaseAuthException catch (e) {
+      if (e.code == 'email-already-in-use') {
+        throw 'This email is already registered. Please login instead.';
+      }
       throw _handleAuthError(e);
     } catch (e) {
-      throw 'An unexpected error occurred. Please try again.';
+      debugPrint('Registration Error: $e');
+      throw 'Registration failed: ${e.toString()}';
     }
   }
 

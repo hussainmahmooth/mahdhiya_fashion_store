@@ -41,50 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDW-T8iVpW9vF0X-HQ8Z_5QKBQwP5WaoGo',
-    appId: '1:945946832817:web:a4556bfffe08325221d790',
-    messagingSenderId: '945946832817',
-    projectId: 'mahdhiya-fashion-store',
-    authDomain: 'mahdhiya-fashion-store.firebaseapp.com',
-    storageBucket: 'mahdhiya-fashion-store.firebasestorage.app',
-    measurementId: 'G-9WEZN97BCJ',
+    apiKey: 'AIzaSyCMlujRjI4yoRQ5Bpfk6PrNtGrjTSrFuMw',
+    appId: '1:328397482467:web:637f49d0a8636a953418d6',
+    messagingSenderId: '328397482467',
+    projectId: 'mahmooth-fashion-store',
+    authDomain: 'mahmooth-fashion-store.firebaseapp.com',
+    storageBucket: 'mahmooth-fashion-store.firebasestorage.app',
+    measurementId: 'G-X8Z5JWX3TH',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC7YO7MmB6pNT3e5teOUvHHwcn_VK85rpk',
-    appId: '1:945946832817:android:711e945656bbcaf221d790',
-    messagingSenderId: '945946832817',
-    projectId: 'mahdhiya-fashion-store',
-    storageBucket: 'mahdhiya-fashion-store.firebasestorage.app',
+    apiKey: 'AIzaSyBFwICqxF-U9By5-TZ0_sx6UZF1o6FPn6g',
+    appId: '1:328397482467:android:15aeec82ab45ae273418d6',
+    messagingSenderId: '328397482467',
+    projectId: 'mahmooth-fashion-store',
+    storageBucket: 'mahmooth-fashion-store.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDLizsyZEzr3q6jwejXDRc62eg88_qH78E',
-    appId: '1:945946832817:ios:5d009ac6ce99d2eb21d790',
-    messagingSenderId: '945946832817',
-    projectId: 'mahdhiya-fashion-store',
-    storageBucket: 'mahdhiya-fashion-store.firebasestorage.app',
-    iosClientId: '945946832817-vl4ltii10kiq5vc02ne8kgf5kn5r23iq.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCUsQcG9zhpXk2iPQW9J5xVNWF7WPGQ15I',
+    appId: '1:328397482467:ios:d217aa6b4851e48f3418d6',
+    messagingSenderId: '328397482467',
+    projectId: 'mahmooth-fashion-store',
+    storageBucket: 'mahmooth-fashion-store.firebasestorage.app',
     iosBundleId: 'com.example.mahdhiyaFashionStore',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDLizsyZEzr3q6jwejXDRc62eg88_qH78E',
-    appId: '1:945946832817:ios:5d009ac6ce99d2eb21d790',
-    messagingSenderId: '945946832817',
-    projectId: 'mahdhiya-fashion-store',
-    storageBucket: 'mahdhiya-fashion-store.firebasestorage.app',
-    iosClientId: '945946832817-vl4ltii10kiq5vc02ne8kgf5kn5r23iq.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCUsQcG9zhpXk2iPQW9J5xVNWF7WPGQ15I',
+    appId: '1:328397482467:ios:d217aa6b4851e48f3418d6',
+    messagingSenderId: '328397482467',
+    projectId: 'mahmooth-fashion-store',
+    storageBucket: 'mahmooth-fashion-store.firebasestorage.app',
     iosBundleId: 'com.example.mahdhiyaFashionStore',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDW-T8iVpW9vF0X-HQ8Z_5QKBQwP5WaoGo',
-    appId: '1:945946832817:web:070db445b245297421d790',
-    messagingSenderId: '945946832817',
-    projectId: 'mahdhiya-fashion-store',
-    authDomain: 'mahdhiya-fashion-store.firebaseapp.com',
-    storageBucket: 'mahdhiya-fashion-store.firebasestorage.app',
-    measurementId: 'G-EKPJEY2VEF',
+    apiKey: 'AIzaSyCMlujRjI4yoRQ5Bpfk6PrNtGrjTSrFuMw',
+    appId: '1:328397482467:web:0a35214267b198853418d6',
+    messagingSenderId: '328397482467',
+    projectId: 'mahmooth-fashion-store',
+    authDomain: 'mahmooth-fashion-store.firebaseapp.com',
+    storageBucket: 'mahmooth-fashion-store.firebasestorage.app',
+    measurementId: 'G-5S02NQ894V',
   );
+
 }
