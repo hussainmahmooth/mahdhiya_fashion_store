@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2e1",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-primary-fixed-variant": "#343d96",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#1a237e",
+                    "secondary-container": "#9ae1ff",
+                    "on-surface-variant": "#454652",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#004d62",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed": "#baeaff",
+                    "on-tertiary-fixed-variant": "#1d4d53",
+                    "surface-bright": "#fbf9f8",
+                    "inverse-primary": "#bdc2ff",
+                    "surface-tint": "#4c56af",
+                    "primary": "#000666",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed": "#001f29",
+                    "inverse-surface": "#303030",
+                    "outline": "#767683",
+                    "tertiary-fixed": "#bbebf1",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#00363b",
+                    "secondary-fixed-dim": "#89d0ed",
+                    "on-primary-fixed": "#000767",
+                    "surface": "#fbf9f8",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#9fcfd5",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#8690ee",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c6c5d4",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#0c6780",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#71a0a5",
+                    "on-secondary-container": "#09657f",
+                    "primary-fixed": "#e0e0ff",
+                    "on-tertiary-fixed": "#001f23",
+                    "background": "#fbf9f8",
+                    "tertiary": "#001f22",
+                    "primary-fixed-dim": "#bdc2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max_width": "1280px",
+                    "sm": "12px",
+                    "margin": "auto",
+                    "base": "8px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Noto Serif"],
+                    "body-sm": ["Inter"],
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Noto Serif"],
+                    "display-md": ["Noto Serif"],
+                    "label-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["10px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-md": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24">
+<!-- TopAppBar Shell -->
+<header class="sticky top-0 w-full flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-blue-50/50 dark:border-indigo-900/20 shadow-[0_2px_12px_rgba(26,35,126,0.03)]">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-70 transition-opacity text-indigo-900 dark:text-indigo-100">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+</div>
+<div class="text-lg font-serif font-bold tracking-widest uppercase text-indigo-950 dark:text-indigo-50 font-serif tracking-tight">
+            Mahdhiya Fashion
+        </div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-70 transition-opacity text-indigo-900 dark:text-indigo-100">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto">
+<!-- Hero Banner -->
+<section class="px-6 py-8">
+<div class="relative h-[500px] w-full overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(26,35,126,0.08)]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Elegant woman in a silk evening gown walking through a marble hallway with soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtS4_f2cGbiBUq3G81biEchxNxhqGxjI9wTky-C2oQ6Ju4xWl3aPH1JMfAgUCEW5F8lWzlRh37dGotcOz6DuG127b3fzT4gIpREsGDuWbgYvi07WR40HdIFA2BSB9xiHxf-Up1EjvkOnLDjh9lffX_w9IfZJFs5XLmdzPIyiNVqzTFkvUn1p4ITzs6LZjY6xl4mcLteXAtiO1jXIWnUh6chTOcXdqlLLdejnXGpwrABq22L9ja-NheAEVizpAc325duZnprRdGCRrF"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
+<div class="relative h-full flex flex-col justify-center px-12 max-w-2xl">
+<span class="font-label-lg text-white mb-4 tracking-widest uppercase">Ethereal Elegance</span>
+<h1 class="font-display-lg text-white mb-6 leading-tight">New Seasonal Collection</h1>
+<div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-lg hover:opacity-90 transition-all active:scale-95">
+                            EXPLORE NOW
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Horizontal Navigation -->
+<section class="px-6 py-6">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-md text-indigo-950">Categories</h2>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-4">
+<div class="flex-shrink-0 group cursor-pointer text-center">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-3 border-2 border-transparent group-hover:border-secondary transition-all">
+<img class="w-full h-full object-cover" data-alt="Flowing pastel pink summer dress hanging on a wooden rack against a white wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaMk7Px_L2UzJibNmzyCl4zOfWnxMETuthIH9M1PaxnscxZzy0ke5yH13LHLknvbbAk7qr_ewNj1Yxow8wc6swN0W6lAbGNbG8D24NksPgrXZF04-UcJgP5mymtvj0ROluFeszroWA5ThvT8tFMw6mFBvCZ-w3ajiUehDdlck7OTTHOU3cbelnHbHw_1KJW99bqmrlqXEas12bHlu8ik5ZQSUpOk1lss9g-0JucYc7FysH-gZPL_O_ZaX889xB_8YsRkvWcDkUWF49"/>
+</div>
+<span class="font-label-md text-on-surface-variant">Dresses</span>
+</div>
+<div class="flex-shrink-0 group cursor-pointer text-center">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-3 border-2 border-transparent group-hover:border-secondary transition-all">
+<img class="w-full h-full object-cover" data-alt="High-fashion white silk blouse with intricate lace detailing on a minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE6YHNyogvtnzsQ0l6w_-T7qNR4x0pSYlY2CbMdNiFEAF_OELHDuE6W7lk_laJP5PkrtMhSxrybtMcJno-fJ4KvrYLFGgMb0AomLLLjJ6l2IZL6MqG-8Adz0q_Mk6Bu0CsIjeh5q9Rkig7XxjiXCX51eD4J4ityurvKZYVJVe95rwJxnUaBJEl5wr-r1AVvFR5PUZPvsqt3d-ILjUFfLhGQqpgSlnSyarOgpe4viM7OlNx6wulAi_LaZsGTO75EnOAT33H_xWT75hL"/>
+</div>
+<span class="font-label-md text-on-surface-variant">Tops</span>
+</div>
+<div class="flex-shrink-0 group cursor-pointer text-center">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-3 border-2 border-transparent group-hover:border-secondary transition-all">
+<img class="w-full h-full object-cover" data-alt="Luxury camel wool trench coat draped over a minimalist chair in a bright studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-GPyXz09DaXNPfR9ujiccHAUb_HY-hFvEXzLDAtGGuSaZpRXLcaCcGFAemGa5I5wjVV1aGQ3hiuh6K91Zk0BQR91T91P-7V4pW_EHrzdDqm9bPM_uwPUbSnegIjSMQB6S2OekKd4veav2hAkkp1Voa9zNHEUFoN1ieduDJUZKQb7EnET-8e3KIU6CJxzRrTMM0GEixXA-flNhhgMEUt8teK130wJAvWaw_-qA6pA2UK5JrTv1vtScWV9oNOLUvKScC6RdndBRLiH"/>
+</div>
+<span class="font-label-md text-on-surface-variant">Outerwear</span>
+</div>
+<div class="flex-shrink-0 group cursor-pointer text-center">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-3 border-2 border-transparent group-hover:border-secondary transition-all">
+<img class="w-full h-full object-cover" data-alt="Close-up of gold minimalist jewelry and a leather handbag on a light blue surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyJeFgnT9zkbYuBaRlQXu2vg1NEp82aJJx6tb6a_sFvyx6tnLPrc77kMqnOhxfVjdab2MRX8Y1oQpDSe4rLF3h-WWEB1qQfeR0gi0jHN3f2PJzoXg2aR-FsuJYAj3YUyTzODjCB_JEB0JtoMwemNOVR5APJm3v8c-cZM08DJpZnAwdXwZXM2BQOafMqWbKJcf02OFnyhQexv28HG55JEPCUYoyNIzDx_NBDZCXztxr5LBMakt_ZMkZxPRsvz9K-0D9wtxmxavhrpK4"/>
+</div>
+<span class="font-label-md text-on-surface-variant">Accessories</span>
+</div>
+</div>
+</section>
+<!-- Trending Now Bento/Grid -->
+<section class="px-6 py-8 bg-surface-container-low/30">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="font-headline-lg text-indigo-950">Trending Now</h2>
+<p class="font-body-sm text-outline">Curated styles that define the season</p>
+</div>
+<button class="text-secondary font-label-lg hover:underline">VIEW ALL</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-[0_4px_20px_rgba(26,35,126,0.03)] bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Studio portrait of a model wearing a minimalist beige ensemble with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5EzU2UXCKJQSOI46LZtJe15tF_rLn9diF3m-SJfp08I06SZTt5aZzuteFSGJBoJ8h7pmoh31nZ2Sl8dhZQ_wEu90EyGSSBrrWVrJiK_D-qvDrxg7cAEENcCWrCZzUXauw7gzTeulVx_NT6rZzJ4r58XR7L12oqsSbpSesAOu1UXTP0sOZvUKLlke9Fn77_a1JHgj73awjVaMcTtw9zqVjTd9nUjDNcP0rjIWZt4Pik0sr0AqAq_JruQnzVV5aWz5WduythQ5X-CmJ"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-base text-indigo-900 mb-1">Azure Silk Midi</h3>
+<p class="font-label-lg text-secondary">$245.00</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-[0_4px_20px_rgba(26,35,126,0.03)] bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Model wearing a floral print chiffon dress standing in a sun-drenched garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqyeSCrJBwkWMRkzLRl7YrCZpuXhJTfskxAQhKPIv7F5X5DL7H_HMuZZ2o-C8UXyRLdJJTafeBtg5FigzlIe1ILK9jHQlsVrE6vjTYW7FCWCxev4U_yn_pSZGeCvis75uPox4bD8sU491ugplijhaeyCBwMtW8naIiCAXjpLSneLyK8iyL9j3y6fuyYpl4DOk1XYHwr2uCsYJVRU_0gB3AiN58ViNqavs-y1ZFLRHPBQWnqrXY_ImFyKJvrV8H0qJP4TTN3JEYqzfZ"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-base text-indigo-900 mb-1">Flora Garden Gown</h3>
+<p class="font-label-lg text-secondary">$310.00</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-[0_4px_20px_rgba(26,35,126,0.03)] bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern woman in a vibrant yellow casual outfit walking against a clean white wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiyDAoXff5L80Fn2RsDuHpKwl5aYfyZGECWIzEWj-WrkxLCsJDttf9DJgTq0CDqRWskup89BtR6zhb_QSLnW17Co2Y_4Xy6v-jHJrmtmDRKEPOK8V4jmN2dFnaYNXFmj-bOBrUzYEP6P-sbxjQNnrgrbeTVKtwFQaP_9XgYHe3EIauB3FMv9DqECFaNlVeiICq7fh3QyCZN1GPEDZFaVhXp_jpXabhJAASvK0UReTcTOuLNr5y95MtdJGLTtGM4haV-VAT8Mjrjq62"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-base text-indigo-900 mb-1">Citrus Knit Set</h3>
+<p class="font-label-lg text-secondary">$185.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-4 shadow-[0_4px_20px_rgba(26,35,126,0.03)] bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant monochromatic fashion editorial featuring a navy blue structured coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP2TnYsNXDcg0gWG-EAcCk-E8wlAQPdE9B-O79n4y9lpxTgKQjBeAxmNyMOcNU2GNjz-gzjg-cDoAwzily76q0cSDqHxrmhb1ibEiaxS41-aLs0sJxAnArawPYYRcxtdUuev99313orm-kNklA5FeIVHk-lavncKAGIHorhwnM3O0erzKCIVvrGfO7C_xNsZeC5V1bUzsSrv7ecINmvVDrx5_BzWeIS2ohf1PG9cStVYRbyX8iPaw_6B8cwUUobBmpSM7KocdLMosB"/>
+</div>
+<div class="text-center">
+<h3 class="font-headline-md text-base text-indigo-900 mb-1">Indigo Structure</h3>
+<p class="font-label-lg text-secondary">$420.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Exclusive Promo -->
+<section class="px-6 py-12">
+<div class="relative overflow-hidden rounded-2xl bg-secondary-container p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="z-10 text-center md:text-left">
+<h2 class="font-display-md text-on-secondary-container mb-4">Member Exclusive</h2>
+<p class="font-body-lg text-secondary mb-8 max-w-md">Join the Mahdhiya Circle for 15% off your first seasonal order and early access to drops.</p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-lg hover:shadow-lg transition-all active:scale-95">
+                        JOIN THE CIRCLE
+                    </button>
+</div>
+<div class="relative w-64 h-64 md:w-80 md:h-80 z-10">
+<div class="absolute inset-0 bg-white/20 blur-3xl rounded-full"></div>
+<img class="w-full h-full object-contain drop-shadow-2xl" data-alt="Minimalist luxury gift box in powder blue with a white silk ribbon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtqsptQcJnlGa-0E1e9sSbysUlE2mbte_K1RbQyTnF_EuV2G90goEJKFQ6bNxOOQ07cCh8PTWN2PDD3pkSBnngCB-uaYHzZhvv2yKDNtr1HopZ0P0pTyLVmOvjP8rMLEqP7VQcQz-wzHAvsSI2Kae9a66Ri95LP0cQe09Hjwh2Qu5DkitrnqKycOw8pZgUz19axxLtPcQU4IIm7DRDM84uj__QEUCEB2Qucrkf8O-EfsONlfy1-RyrDxUHJBcjK8EqrYFzUnS7UjRW"/>
+</div>
+<!-- Abstract Shapes -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-24 -mt-24"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-12 -mb-12"></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-t-2xl border-t border-blue-50/50 shadow-[0_-8px_24px_rgba(26,35,126,0.05)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-indigo-900 dark:text-white bg-blue-50/80 dark:bg-indigo-800/30 rounded-xl px-4 py-1 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Home</span>
+</a>
+<!-- Shop -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Shop</span>
+</a>
+<!-- Cart -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Cart</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

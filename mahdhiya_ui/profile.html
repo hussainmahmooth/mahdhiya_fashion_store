@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2e1",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-primary-fixed-variant": "#343d96",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#1a237e",
+                    "secondary-container": "#9ae1ff",
+                    "on-surface-variant": "#454652",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#004d62",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed": "#baeaff",
+                    "on-tertiary-fixed-variant": "#1d4d53",
+                    "surface-bright": "#fbf9f8",
+                    "inverse-primary": "#bdc2ff",
+                    "surface-tint": "#4c56af",
+                    "primary": "#000666",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed": "#001f29",
+                    "inverse-surface": "#303030",
+                    "outline": "#767683",
+                    "tertiary-fixed": "#bbebf1",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#00363b",
+                    "secondary-fixed-dim": "#89d0ed",
+                    "on-primary-fixed": "#000767",
+                    "surface": "#fbf9f8",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#9fcfd5",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#8690ee",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c6c5d4",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#0c6780",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#71a0a5",
+                    "on-secondary-container": "#09657f",
+                    "primary-fixed": "#e0e0ff",
+                    "on-tertiary-fixed": "#001f23",
+                    "background": "#fbf9f8",
+                    "tertiary": "#001f22",
+                    "primary-fixed-dim": "#bdc2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max_width": "1280px",
+                    "sm": "12px",
+                    "margin": "auto",
+                    "base": "8px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Noto Serif"],
+                    "body-sm": ["Inter"],
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Noto Serif"],
+                    "display-md": ["Noto Serif"],
+                    "label-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["10px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-md": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-blue-50/50 dark:border-indigo-900/20 shadow-[0_2px_12px_rgba(26,35,126,0.03)]">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-indigo-900 dark:text-indigo-100 active:scale-95 duration-200 transition-opacity hover:opacity-70">arrow_back</button>
+<span class="text-lg font-serif font-bold tracking-widest uppercase text-indigo-950 dark:text-indigo-50">Mahdhiya Fashion</span>
+</div>
+<button class="material-symbols-outlined text-indigo-900 dark:text-indigo-100 active:scale-95 duration-200 transition-opacity hover:opacity-70">search</button>
+</header>
+<main class="max-w-[1280px] mx-auto px-6 py-lg pb-32">
+<!-- User Profile Header -->
+<section class="mb-lg">
+<div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(26,35,126,0.04)] border border-blue-50/30">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full overflow-hidden ring-4 ring-secondary-fixed/30 ring-offset-4 ring-offset-white">
+<img alt="Profile photo" class="w-full h-full object-cover" data-alt="Close-up portrait of a young woman with a serene expression, soft natural lighting, high-end fashion photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIfjZT9TL6_Ut8m2ulHbfwm1DVT72Spb7Dyzchdek1v935vC3lUIBNJYysrNXjUAjPwzNwQCbfXKpj92lJqGhXu67ZllYlsPV8xnkihCIfPiQ5MLaLrZwXAq3kxxWZksSxLH5btBT1GdiPNBklS7NNf6bnT16gjlo6np5EjohR12INBD12RgqkVFxjRqTz5sC1M2pTbuixIiBhNuFP3zs4ELKLlhGcMf_Y0ocoZTh5PCaGWYvBukNu4qRedOwDGWIJb0PSg3zWQVRK"/>
+</div>
+<button class="absolute bottom-1 right-1 bg-primary text-on-primary rounded-full p-2 shadow-lg border-2 border-white hover:scale-105 transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="text-center md:text-left space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-primary">Sarah J.</h1>
+<p class="font-body-md text-body-md text-outline">sarah.jansen@example.com</p>
+<div class="pt-2 flex gap-3 justify-center md:justify-start">
+<span class="px-3 py-1 bg-secondary-fixed/40 text-on-secondary-fixed-variant text-label-md font-label-md rounded-full">Gold Member</span>
+<span class="px-3 py-1 bg-surface-container text-outline text-label-md font-label-md rounded-full">12 Orders</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu List -->
+<section class="max-w-2xl mx-auto space-y-4">
+<!-- Account Section -->
+<div class="space-y-3">
+<h3 class="font-label-lg text-label-lg text-outline uppercase tracking-widest pl-4">Account Settings</h3>
+<div class="bg-white rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(26,35,126,0.03)] border border-blue-50/20">
+<!-- Menu Item -->
+<a class="flex items-center justify-between px-6 py-5 hover:bg-surface-container-low transition-colors border-b border-surface-container/50" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Order History</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<!-- Menu Item -->
+<a class="flex items-center justify-between px-6 py-5 hover:bg-surface-container-low transition-colors border-b border-surface-container/50" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">location_on</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Saved Addresses</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<!-- Menu Item -->
+<a class="flex items-center justify-between px-6 py-5 hover:bg-surface-container-low transition-colors border-b border-surface-container/50" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">payments</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Payment Methods</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<!-- Menu Item -->
+<a class="flex items-center justify-between px-6 py-5 hover:bg-surface-container-low transition-colors border-b border-surface-container/50" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">favorite</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Wishlist</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+<!-- Menu Item -->
+<a class="flex items-center justify-between px-6 py-5 hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">notifications</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">Notifications</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Logout Section -->
+<div class="pt-8 flex flex-col items-center">
+<button class="w-full md:w-auto px-12 py-4 rounded-full border-2 border-secondary-container text-secondary font-label-lg hover:bg-secondary-container/10 active:scale-95 transition-all duration-200">
+                    Logout
+                </button>
+<p class="mt-6 text-label-sm text-outline opacity-50 uppercase tracking-tighter">Mahdhiya Fashion v2.4.0</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-t-2xl border-t border-blue-50/50 shadow-[0_-8px_24px_rgba(26,35,126,0.05)]">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 transition-transform duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Home</span>
+</a>
+<!-- Shop -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 transition-transform duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Shop</span>
+</a>
+<!-- Cart -->
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-300 transition-transform duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Cart</span>
+</a>
+<!-- Profile (Active) -->
+<a class="flex flex-col items-center justify-center text-indigo-900 dark:text-white bg-blue-50/80 dark:bg-indigo-800/30 rounded-xl px-4 py-1 transition-transform duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

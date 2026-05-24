@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wishlist | MUSAB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#f2ca50",
+                        "inverse-primary": "#735c00",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-primary-container": "#554300",
+                        "on-secondary": "#2f3131",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary": "#3d2f00",
+                        "on-surface": "#e2e2e2",
+                        "primary-container": "#d4af37",
+                        "error": "#ffb4ab",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#454747",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-variant": "#353535",
+                        "on-primary": "#3c2f00",
+                        "surface-dim": "#131313",
+                        "secondary": "#c6c6c7",
+                        "surface-bright": "#393939",
+                        "surface-container-low": "#1b1b1b",
+                        "outline-variant": "#4d4635",
+                        "outline": "#99907c",
+                        "surface-tint": "#e9c349",
+                        "surface-container": "#1f1f1f",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-tertiary-container": "#554300",
+                        "on-surface-variant": "#d0c5af",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary-fixed": "#ffe089",
+                        "tertiary": "#edcb68",
+                        "surface-container-highest": "#353535",
+                        "tertiary-fixed-dim": "#e5c360",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "secondary-container": "#454747",
+                        "inverse-surface": "#e2e2e2",
+                        "on-tertiary-fixed": "#241a00",
+                        "background": "#131313",
+                        "on-background": "#e2e2e2",
+                        "primary-fixed": "#ffe088",
+                        "inverse-on-surface": "#303030",
+                        "surface": "#131313",
+                        "tertiary-container": "#d0b04f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/40 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<button class="text-[#d4af37] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-black tracking-[-0.05em] text-[#e2e2e2] font-['Manrope'] uppercase tracking-[0.1em] font-bold">MUSAB</h1>
+<button class="text-[#d4af37] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto min-h-screen">
+<!-- Editorial Header -->
+<section class="mb-12">
+<h2 class="font-headline text-[3.5rem] leading-none font-extrabold tracking-[-0.05em] text-on-surface mb-2">WISHLIST</h2>
+<p class="font-body text-outline text-sm uppercase tracking-[0.2em]">Curated Pieces (4)</p>
+</section>
+<!-- Bento Grid Layout for Products -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Wishlist Item 1 -->
+<div class="group relative flex flex-col gap-4">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a high-end tailored black wool overcoat on a minimalist mannequin with dramatic side lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByd_QlLwYUuio3GYJkGROk_WqxOf5vwwghNM59Duy0wCUUw_iLIbDKda3DR3z7w6suKnqRYY3A1FujfZVJ670iwJSCMNVvwT-yDj2Xigda56Vv3ppzMJQp3LLOXqLtnUtwrtXbXTxSfblYFFP2z6IQF1RsFlZGy9MNNiqPnEl0hryxr4bpwqDK5Th43NWNVVT0f5ZV9pU-asF_EDrGOZym8Byu8JIXYQYfLKqbKJbyxbN7WeUafdpMm8XQLE4yJcU2a0vznO3Im6dV"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-[#131313]/40 backdrop-blur-md text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/80 to-transparent">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold uppercase tracking-widest text-xs rounded-md">Add to Cart</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline font-bold text-lg text-on-surface leading-tight">STRUCTURED OVERCOAT</h3>
+<p class="font-body text-xs text-outline uppercase tracking-wider">Outerwear • Obsidian Black</p>
+</div>
+<span class="font-headline font-bold text-primary">$1,250</span>
+</div>
+</div>
+<!-- Wishlist Item 2 -->
+<div class="group relative flex flex-col gap-4">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion shot of a luxury cashmere silk sweater in cream tone, soft texture detail against a dark moody architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBqDwnezWKHiIyTlU_9KAebTuS1DCQ_DoT2b5JYtEQtznzsGwm1LbVJHl-Yl6FebsNsDlfvqAHHVhO6oIPqliBjYpkCUfrb9lylZC5SpsBpqsT9GxHSBLzg82SdqAx-16cz3d2cNHP6J21mC-f5Esi7tHaRnrDpL0GazcWpcOZpO0tKz3aVQEHx3DVMRpKV2N-Z1Wa29EE_vv4ex2giN0X3KGExPVvcxfQwWAPQYo9locYnY9zRKbZ8RSc-PpCYMOz4yteHx4TaTtA"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-[#131313]/40 backdrop-blur-md text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/80 to-transparent">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold uppercase tracking-widest text-xs rounded-md">Add to Cart</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline font-bold text-lg text-on-surface leading-tight">CASHMERE ESSENCE</h3>
+<p class="font-body text-xs text-outline uppercase tracking-wider">Knitwear • Bone White</p>
+</div>
+<span class="font-headline font-bold text-primary">$680</span>
+</div>
+</div>
+<!-- Wishlist Item 3 (Horizontal Asymmetry) -->
+<div class="group relative flex flex-col gap-4 md:col-span-2 lg:col-span-1 lg:row-span-1">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Designer leather footwear with metallic accents, focused macro shot showing premium stitching and texture on a dark reflective surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADeTE1oHh9GkY0Sp1nM6JMg0r5WBTXMhQ4dPaBC7fxA2c4yGVFAHjx8Q0htnZ30yc3m93ClviktYnOuOXPtBuYGu4-HyVEovH59tRNlV5OFEGXkBsyze7kpImchYLmUwVY1hQFO9dUXWUfrj76rBdi5m9b0F4cbm-tZgnvUADNM_f_wOaEI6kezvSJMtdJ6Yf4MmOpbhcv00fltnADAvF83AYD6TVBa4hbIQ8d-Yeh_9qQcPS5oVAkx3JP2uRHOTezZ8gY615d8jTV"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-[#131313]/40 backdrop-blur-md text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/80 to-transparent">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold uppercase tracking-widest text-xs rounded-md">Add to Cart</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline font-bold text-lg text-on-surface leading-tight">SIGNATURE DERBY</h3>
+<p class="font-body text-xs text-outline uppercase tracking-wider">Footwear • Polished Calfskin</p>
+</div>
+<span class="font-headline font-bold text-primary">$890</span>
+</div>
+</div>
+<!-- Wishlist Item 4 -->
+<div class="group relative flex flex-col gap-4">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Model wearing premium tailored charcoal trousers in a modern architectural setting with deep shadows and sharp highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-U4sb1CSOTxVYv-1ST1xfmYV0QBVE-8G05KgapUOvHA0l9lITEXq5wruyiOao8dHfwtZ5TQqByg5wEgHBV9YoD0CWS7uxHpDhzhkUtVDGA8IKNfeMCBVCIw59N9xKjnBABVudVJd3-LNaFMjXgE-rzJnHcLReQLW962VKBpQNU3PbdQRP8pBD4a5Cwk16KMSuM1fFqEACuieB3HofWDlzXqBKZkAsL7yD6wxCGz77weodr32sOxn1tlzHmHzCmStG_dcwA5f50MbQ"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-[#131313]/40 backdrop-blur-md text-primary">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/80 to-transparent">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold uppercase tracking-widest text-xs rounded-md">Add to Cart</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline font-bold text-lg text-on-surface leading-tight">PLEATED TROUSER</h3>
+<p class="font-body text-xs text-outline uppercase tracking-wider">Bottoms • Charcoal Slate</p>
+</div>
+<span class="font-headline font-bold text-primary">$420</span>
+</div>
+</div>
+</div>
+<!-- Section for Empty State (Hidden by default, shown via CSS logic if needed) -->
+<div class="hidden flex-col items-center justify-center py-40 text-center">
+<span class="material-symbols-outlined text-6xl text-outline-variant mb-6" data-icon="heart_broken">heart_broken</span>
+<h3 class="font-headline text-2xl font-bold mb-2">THE GALLERY IS VACANT</h3>
+<p class="text-outline max-w-xs mx-auto mb-8">Begin your collection by selecting pieces that resonate with your personal aesthetic.</p>
+<button class="px-10 py-4 bg-primary-container text-on-primary-container rounded-md font-bold uppercase tracking-widest text-sm hover:scale-105 transition-all">Explore Collections</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-3 pb-6 px-4 bg-[#131313]/40 backdrop-blur-xl z-50">
+<button class="flex flex-col items-center justify-center text-[#e2e2e2]/60 gap-1 hover:text-[#f2ca50] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-[0.1em]">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e2e2e2]/60 gap-1 hover:text-[#f2ca50] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-[0.1em]">Categories</span>
+</button>
+<!-- Active Item: Wishlist -->
+<button class="flex flex-col items-center justify-center text-[#f2ca50] gap-1 hover:text-[#f2ca50] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-[0.1em]">Wishlist</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e2e2e2]/60 gap-1 hover:text-[#f2ca50] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-[0.1em]">Cart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#e2e2e2]/60 gap-1 hover:text-[#f2ca50] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-[0.1em]">Profile</span>
+</button>
+</nav>
+</body></html>

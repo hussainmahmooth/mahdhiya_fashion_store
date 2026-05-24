@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#e4e2e1",
+            "surface-container-highest": "#e4e2e1",
+            "on-primary-fixed-variant": "#343d96",
+            "surface-container-high": "#eae8e7",
+            "primary-container": "#1a237e",
+            "secondary-container": "#9ae1ff",
+            "on-surface-variant": "#454652",
+            "surface-container-low": "#f6f3f2",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#004d62",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1b1c1c",
+            "secondary-fixed": "#baeaff",
+            "on-tertiary-fixed-variant": "#1d4d53",
+            "surface-bright": "#fbf9f8",
+            "inverse-primary": "#bdc2ff",
+            "surface-tint": "#4c56af",
+            "primary": "#000666",
+            "on-primary": "#ffffff",
+            "surface-container": "#f0eded",
+            "on-background": "#1b1c1c",
+            "on-secondary-fixed": "#001f29",
+            "inverse-surface": "#303030",
+            "outline": "#767683",
+            "tertiary-fixed": "#bbebf1",
+            "error": "#ba1a1a",
+            "tertiary-container": "#00363b",
+            "secondary-fixed-dim": "#89d0ed",
+            "on-primary-fixed": "#000767",
+            "surface": "#fbf9f8",
+            "inverse-on-surface": "#f3f0f0",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#9fcfd5",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#8690ee",
+            "error-container": "#ffdad6",
+            "outline-variant": "#c6c5d4",
+            "on-secondary": "#ffffff",
+            "secondary": "#0c6780",
+            "surface-dim": "#dcd9d9",
+            "on-tertiary-container": "#71a0a5",
+            "on-secondary-container": "#09657f",
+            "primary-fixed": "#e0e0ff",
+            "on-tertiary-fixed": "#001f23",
+            "background": "#fbf9f8",
+            "tertiary": "#001f22",
+            "primary-fixed-dim": "#bdc2ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "max_width": "1280px",
+            "sm": "12px",
+            "margin": "auto",
+            "base": "8px",
+            "xs": "4px",
+            "gutter": "24px",
+            "md": "24px",
+            "xl": "80px",
+            "lg": "48px"
+          },
+          "fontFamily": {
+            "headline-lg": ["Noto Serif"],
+            "body-sm": ["Inter"],
+            "display-lg": ["Noto Serif"],
+            "body-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-md": ["Noto Serif"],
+            "display-md": ["Noto Serif"],
+            "label-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+            "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+            "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-sm": ["10px", {"lineHeight": "1", "fontWeight": "500"}],
+            "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+            "display-md": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+<!-- TopAppBar Navigation Shell - Suppressed for Transactional Focus -->
+<!-- We use a simplified header instead per "Linear/Transactional" rule -->
+<header class="sticky top-0 w-full flex justify-center items-center px-6 py-8 bg-white/80 backdrop-blur-lg z-50">
+<div class="text-lg font-headline-lg font-bold tracking-widest uppercase text-primary">
+      Mahdhiya Fashion
+    </div>
+</header>
+<main class="max-w-[1280px] mx-auto px-6 pb-24">
+<!-- Success Celebration Hero -->
+<section class="flex flex-col items-center text-center pt-12 pb-16">
+<div class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-8 shadow-[0_8px_32px_rgba(26,35,126,0.1)]">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-display-md text-display-md text-primary mb-2">Thank You for Your Order!</h1>
+<p class="font-body-lg text-body-lg text-outline mb-8">We've received your request and are preparing it with care.</p>
+<div class="inline-flex items-center gap-2 bg-secondary-container/30 px-4 py-2 rounded-full">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Order Number</span>
+<span class="font-label-lg text-label-lg text-primary">#MF-88291</span>
+</div>
+</section>
+<!-- Order Details Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Items Summary -->
+<div class="md:col-span-8 space-y-6">
+<div class="bg-white rounded-xl p-8 shadow-[0_4px_24px_rgba(26,35,126,0.03)] border border-blue-50/50">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Order Summary (2 items)</h2>
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="flex gap-6 pb-6 border-b border-surface-variant/30">
+<div class="w-24 h-32 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img alt="Silk Midi Dress" class="w-full h-full object-cover" data-alt="Close-up of a luxurious cream-colored silk midi dress draped elegantly on a minimalist background with soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1zMmSIqJRSl4YA_pAK6jvfSXhJ84Kt4xcgAfrX99B_vRFq4stViXy6B9_VabIS-6Fk6E3QBS_I9gpR4KvA5i_CxnLo_HpsPvkKrRueUTMO9BDPOvCqAfmCmr6MQobBOFS2OkUAimZA9wI1EIaE7ZFpOjPNJhlIzIRUaQ7upcdu9KXH3YMVa_cgyHiDlFw-cWwusTeoNgxP66owEM1IqTHFmjJtVuiv6XDgTE5Oe_5bYia7ySvtF0AvIW_M5NJTUVBpOj_I_MdG8nG"/>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-md text-[18px] text-primary">Silk Wrap Midi Dress</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1">Champagne / Medium</p>
+<p class="font-label-lg text-label-lg text-primary mt-4">$240.00</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-6">
+<div class="w-24 h-32 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img alt="Gold Link Bracelet" class="w-full h-full object-cover" data-alt="Extreme close-up of a delicate 18k gold link bracelet resting on a piece of white marble with soft natural sunlight shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtaUOJffaJPEOl3KoYyR4LezYWbH5HTh3JTU1nnnHdiZ46srUABdX2atSXnVJSAgS64yMEywMMJqea6wPTQ-MLZ8G7xX1Hj2DyHI84GrPGRJLot4l7PbFxnKunjkNLy75FKIwpmNvzg2T72LJKonJwtd9BI2yqSge5ZUzsQ2WLF1cM-eZ5qKtu70FGabdSEwV92e2kG6BwfhVpohli-i3hyLzXM5Z4jsaTXDr2fgw61F9w80RF4AmPHH1m-KgrU1DlCSDnmLN1GneV"/>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-headline-md text-[18px] text-primary">Essential Link Bracelet</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1">18k Gold Plated / One Size</p>
+<p class="font-label-lg text-label-lg text-primary mt-4">$115.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Logistics Sidebar -->
+<div class="md:col-span-4 space-y-6">
+<!-- Delivery Estimate -->
+<div class="bg-primary text-white rounded-xl p-8 shadow-xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="local_shipping">local_shipping</span>
+<h3 class="font-label-lg text-label-lg uppercase tracking-wider">Delivery Estimate</h3>
+</div>
+<p class="font-headline-lg text-headline-lg mb-2">Oct 24 - Oct 26</p>
+<p class="font-body-sm text-body-sm text-blue-100 opacity-80">Express Shipping via DHL International</p>
+</div>
+<!-- Address Card -->
+<div class="bg-surface-container-low rounded-xl p-8 border border-blue-50/50">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Shipping Address</h3>
+</div>
+<address class="not-italic font-body-md text-on-surface-variant leading-relaxed">
+            Eleanor Pemberton<br/>
+            42 Highgrove Gardens<br/>
+            Kensington, London W8 5LE<br/>
+            United Kingdom
+          </address>
+</div>
+<!-- Action Section -->
+<div class="space-y-4 pt-4">
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg uppercase py-5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="package_2">package_2</span>
+            Track Order
+          </button>
+<button class="w-full border border-primary/20 text-primary font-label-lg text-label-lg uppercase py-5 rounded-xl flex items-center justify-center gap-2 hover:bg-white transition-all active:scale-95">
+            Continue Shopping
+          </button>
+</div>
+</div>
+</div>
+<!-- Need Help Section -->
+<section class="mt-20 pt-12 border-t border-surface-variant/30 flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Need assistance with your order?</h4>
+<p class="font-body-md text-body-md text-outline">Our customer concierge is available 24/7 for you.</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 px-6 py-3 bg-white rounded-full border border-blue-50 text-primary font-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+          support@mahdhiya.com
+        </div>
+<div class="flex items-center gap-2 px-6 py-3 bg-white rounded-full border border-blue-50 text-primary font-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+          +44 20 7946 0123
+        </div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Shell - Suppressed for Checkout Success/Transactional focus as per rules -->
+<!-- Contextual Support for "Home" or "Shop" via "Continue Shopping" button above satisfies UX -->
+</body></html>

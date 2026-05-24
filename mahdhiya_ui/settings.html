@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAHMOOTH - Settings &amp; Privacy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary-container": "#bab8b7",
+                      "on-tertiary-fixed-variant": "#35437e",
+                      "on-surface": "#e5e2e1",
+                      "inverse-on-surface": "#313030",
+                      "tertiary-fixed-dim": "#b9c3ff",
+                      "surface-container-highest": "#353534",
+                      "tertiary": "#b9c4ff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed": "#dde1ff",
+                      "surface": "#131313",
+                      "inverse-primary": "#755b00",
+                      "surface-bright": "#3a3939",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-primary-container": "#503d00",
+                      "surface-container": "#201f1f",
+                      "on-tertiary": "#1e2b66",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-dim": "#131313",
+                      "inverse-surface": "#e5e2e1",
+                      "outline": "#99907e",
+                      "outline-variant": "#4d4637",
+                      "surface-container-low": "#1c1b1b",
+                      "on-tertiary-container": "#2e3b77",
+                      "on-secondary-fixed-variant": "#474646",
+                      "primary-fixed-dim": "#e6c364",
+                      "surface-tint": "#e6c364",
+                      "primary-fixed": "#ffe08f",
+                      "on-secondary": "#313030",
+                      "surface-container-lowest": "#0e0e0e",
+                      "secondary-container": "#4a4949",
+                      "on-error": "#690005",
+                      "on-background": "#e5e2e1",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed": "#041451",
+                      "on-primary-fixed-variant": "#584400",
+                      "secondary": "#c8c6c5",
+                      "on-surface-variant": "#d0c5b2",
+                      "on-primary-fixed": "#241a00",
+                      "surface-variant": "#353534",
+                      "tertiary-container": "#9ba8eb",
+                      "background": "#131313",
+                      "primary-container": "#c9a84c",
+                      "on-primary": "#3d2e00",
+                      "error": "#ffb4ab",
+                      "primary": "#e6c364"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0d0d0d;
+        }
+        .luxury-gradient {
+            background: radial-gradient(circle at top left, rgba(201, 168, 76, 0.05) 0%, rgba(8, 8, 8, 0) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body luxury-gradient min-h-screen pb-32">
+<header class="w-full top-0 z-50 flex items-center justify-between px-6 py-4 w-full bg-gradient-to-b from-[#131313] to-transparent sticky">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C] cursor-pointer hover:opacity-70 transition-opacity" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-headline uppercase tracking-[0.2em] text-sm text-[#C9A84C]">SETTING_PRIVACY</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#C9A84C] cursor-pointer hover:opacity-70 transition-opacity" data-icon="more_vert">more_vert</span>
+</div>
+</header>
+<main class="px-6 space-y-12 mt-4">
+<section class="space-y-4">
+<h2 class="font-headline text-[10px] tracking-[0.3em] text-[#C9A84C] opacity-60 uppercase mb-6 px-1">ACCOUNT</h2>
+<div class="space-y-1">
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="person_outline">person_outline</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">EDIT PROFILE</span>
+</div>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-[#4d4637]/20 via-[#4d4637]/10 to-transparent"></div>
+<div class="flex items-center justify-between py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="mail">mail</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2]">EMAIL NOTIFICATIONS</span>
+</div>
+<div class="w-10 h-5 bg-[#C9A84C] rounded-full relative cursor-pointer shadow-[0_0_10px_rgba(201,168,76,0.2)]">
+<div class="absolute right-1 top-1 w-3 h-3 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-[#4d4637]/20 via-[#4d4637]/10 to-transparent"></div>
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="lock_open">lock_open</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">CHANGE PASSWORD</span>
+</div>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-[10px] tracking-[0.3em] text-[#C9A84C] opacity-60 uppercase mb-6 px-1">SECURITY</h2>
+<div class="space-y-1">
+<div class="flex items-center justify-between py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="face">face</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2]">FACE ID / BIOMETRICS</span>
+</div>
+<div class="w-10 h-5 bg-[#C9A84C] rounded-full relative cursor-pointer shadow-[0_0_10px_rgba(201,168,76,0.2)]">
+<div class="absolute right-1 top-1 w-3 h-3 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-[#4d4637]/20 via-[#4d4637]/10 to-transparent"></div>
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="verified_user">verified_user</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">TWO-FACTOR AUTHENTICATION</span>
+</div>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-[10px] tracking-[0.3em] text-[#C9A84C] opacity-60 uppercase mb-6 px-1">PREFERENCES</h2>
+<div class="space-y-1">
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="language">language</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">LANGUAGE</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[10px] text-[#4d4637] font-bold">ENGLISH</span>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-[#4d4637]/20 via-[#4d4637]/10 to-transparent"></div>
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="payments">payments</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">CURRENCY</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[10px] text-[#4d4637] font-bold">USD</span>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-[10px] tracking-[0.3em] text-[#C9A84C] opacity-60 uppercase mb-6 px-1">LEGAL</h2>
+<div class="space-y-1">
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="policy">policy</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">PRIVACY POLICY</span>
+</div>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="open_in_new">open_in_new</span>
+</div>
+<div class="h-[1px] w-full bg-gradient-to-r from-[#4d4637]/20 via-[#4d4637]/10 to-transparent"></div>
+<div class="flex items-center justify-between py-4 group cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C9A84C]" data-icon="description">description</span>
+<span class="font-label text-xs tracking-widest text-[#d0c5b2] group-hover:text-[#C9A84C] transition-colors">TERMS OF SERVICE</span>
+</div>
+<span class="material-symbols-outlined text-[#4d4637]/40 text-sm" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+</section>
+<div class="pt-8 flex flex-col items-center gap-4">
+<button class="w-full py-4 border border-[#C9A84C]/20 rounded-lg font-label text-[10px] tracking-[0.3em] text-[#C9A84C] uppercase hover:bg-[#C9A84C]/5 transition-colors duration-300">
+                LOG OUT
+            </button>
+<p class="text-[8px] tracking-[0.2em] text-[#4d4637] font-bold">MAHMOOTH ATELIER V2.4.0</p>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-[#131313]/60 dark:bg-[#0e0e0e]/60 backdrop-blur-xl border-t border-[#4d4637]/20 shadow-[0_-40px_40px_rgba(201,168,76,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#d0c5b2]/50 hover:text-[#C9A84C] transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-manrope uppercase tracking-widest text-[8px] font-bold">ATELIER</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#d0c5b2]/50 hover:text-[#C9A84C] transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="auto_awesome_motion">auto_awesome_motion</span>
+<span class="font-manrope uppercase tracking-widest text-[8px] font-bold">COLLECTIONS</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#d0c5b2]/50 hover:text-[#C9A84C] transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="auto_fix_high">auto_fix_high</span>
+<span class="font-manrope uppercase tracking-widest text-[8px] font-bold">CURATED</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#C9A84C] scale-105 cursor-pointer">
+<span class="material-symbols-outlined mb-1" data-icon="settings" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-manrope uppercase tracking-widest text-[8px] font-bold">SETTINGS</span>
+</div>
+</nav>
+</body></html>

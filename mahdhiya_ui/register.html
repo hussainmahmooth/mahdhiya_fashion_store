@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e4e2e1",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-primary-fixed-variant": "#343d96",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#1a237e",
+                    "secondary-container": "#9ae1ff",
+                    "on-surface-variant": "#454652",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#004d62",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "secondary-fixed": "#baeaff",
+                    "on-tertiary-fixed-variant": "#1d4d53",
+                    "surface-bright": "#fbf9f8",
+                    "inverse-primary": "#bdc2ff",
+                    "surface-tint": "#4c56af",
+                    "primary": "#000666",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed": "#001f29",
+                    "inverse-surface": "#303030",
+                    "outline": "#767683",
+                    "tertiary-fixed": "#bbebf1",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#00363b",
+                    "secondary-fixed-dim": "#89d0ed",
+                    "on-primary-fixed": "#000767",
+                    "surface": "#fbf9f8",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#9fcfd5",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#8690ee",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c6c5d4",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#0c6780",
+                    "surface-dim": "#dcd9d9",
+                    "on-tertiary-container": "#71a0a5",
+                    "on-secondary-container": "#09657f",
+                    "primary-fixed": "#e0e0ff",
+                    "on-tertiary-fixed": "#001f23",
+                    "background": "#fbf9f8",
+                    "tertiary": "#001f22",
+                    "primary-fixed-dim": "#bdc2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max_width": "1280px",
+                    "sm": "12px",
+                    "margin": "auto",
+                    "base": "8px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Noto Serif"],
+                    "body-sm": ["Inter"],
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Noto Serif"],
+                    "display-md": ["Noto Serif"],
+                    "label-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["10px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-md": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .bg-soft-gradient {
+        background: radial-gradient(circle at top right, #f0f7ff 0%, #ffffff 50%, #f5f9ff 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md bg-soft-gradient min-h-screen selection:bg-secondary-container">
+<!-- Top Navigation Bar (Shared Component) -->
+<!-- Suppressing BottomNavBar as this is a linear transactional screen -->
+<header class="sticky top-0 w-full flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg border-b border-blue-50/50 dark:border-indigo-900/20 shadow-[0_2px_12px_rgba(26,35,126,0.03)] z-50">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-indigo-900 dark:text-indigo-100">arrow_back</span>
+</button>
+<span class="text-lg font-serif font-bold tracking-widest uppercase text-indigo-950 dark:text-indigo-50">Mahdhiya Fashion</span>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-indigo-900 dark:text-indigo-100">search</span>
+</div>
+</header>
+<main class="flex items-center justify-center min-h-[calc(100vh-80px)] px-4 py-xl">
+<div class="max-w-[1280px] w-full grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<!-- Left Side: Branding/Imagery (High-end UI Pattern) -->
+<div class="hidden md:flex flex-col justify-center pr-lg">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-[0_8px_48px_rgba(26,35,126,0.08)]">
+<img alt="High fashion editorial" class="w-full h-full object-cover" data-alt="Elegant fashion editorial photography of a woman in high-end silk attire against a neutral soft-lit studio background, minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ty7nfcN8XZXd_1Z9Y6L0Mt5Cv101UchGU0o8Jd0VU8GVSorkkGyveiBJGGSXhcw8n_fjSecoJeWqMmjigc7NVi-iPxKHbli-zP5l7qLBzo3kcgts7qmCLrjLkZIa1y_IopWmwN8RSIOaJH2tylSdPdADnhfn9xJAq2gt0RswV5kIxnCKr_ZprCshwr72QLsZZtOoSbx2COsufj6I0pe89-2BXeANtIHl_TJbDmk6IdP5siq-s9ClW_dMy1r4Iv4gDZOMvupBxx6d"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-md left-md right-md text-white">
+<h2 class="font-display-md text-display-md mb-xs">Join the Atelier</h2>
+<p class="font-body-md opacity-90">Experience curated elegance tailored for the modern woman.</p>
+</div>
+</div>
+</div>
+<!-- Right Side: Registration Form -->
+<div class="flex justify-center md:justify-start">
+<div class="w-full max-w-[480px] glass-effect p-lg rounded-xl shadow-[0_4px_32px_rgba(26,35,126,0.04)] border border-white/50">
+<header class="mb-lg">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-xs">Create Account</h1>
+<p class="font-body-sm text-on-surface-variant">Step into a world of serene sophistication.</p>
+</header>
+<form class="space-y-md">
+<div class="space-y-xs">
+<label class="font-label-lg text-label-lg text-primary" for="full_name">Full Name</label>
+<input class="w-full bg-white/50 border border-secondary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary outline-none transition-all placeholder:text-outline-variant font-body-md" id="full_name" name="full_name" placeholder="Evelyn Harper" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-lg text-label-lg text-primary" for="email">Email</label>
+<input class="w-full bg-white/50 border border-secondary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary outline-none transition-all placeholder:text-outline-variant font-body-md" id="email" name="email" placeholder="evelyn@fashion.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-sm">
+<div class="space-y-xs">
+<label class="font-label-lg text-label-lg text-primary" for="password">Password</label>
+<input class="w-full bg-white/50 border border-secondary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary outline-none transition-all placeholder:text-outline-variant font-body-md" id="password" name="password" placeholder="••••••••" type="password"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-lg text-label-lg text-primary" for="confirm_password">Confirm Password</label>
+<input class="w-full bg-white/50 border border-secondary/20 rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary outline-none transition-all placeholder:text-outline-variant font-body-md" id="confirm_password" name="confirm_password" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-start gap-sm py-xs">
+<div class="flex items-center h-5">
+<input class="w-4 h-4 text-secondary border-secondary/30 rounded focus:ring-secondary/50 bg-white/50" id="terms" name="terms" type="checkbox"/>
+</div>
+<label class="font-body-sm text-on-surface-variant" for="terms">
+                                I agree to the <a class="text-secondary font-medium hover:underline" href="#">Terms and Conditions</a> and <a class="text-secondary font-medium hover:underline" href="#">Privacy Policy</a>.
+                            </label>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg py-4 rounded-xl shadow-[0_4px_16px_rgba(0,6,102,0.2)] hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 uppercase tracking-widest mt-sm" type="submit">
+                            Sign Up
+                        </button>
+<div class="pt-md text-center">
+<p class="font-body-sm text-on-surface-variant">
+                                Already have an account? 
+                                <a class="text-primary font-semibold hover:text-secondary transition-colors underline underline-offset-4 decoration-secondary/30" href="#">Sign In</a>
+</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Decorative Elements -->
+<div class="fixed bottom-0 left-0 w-full pointer-events-none -z-10 h-64 overflow-hidden">
+<div class="absolute -bottom-32 -left-32 w-96 h-96 bg-secondary-container/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 bg-primary-container/10 blur-[100px] rounded-full"></div>
+</div>
+</body></html>

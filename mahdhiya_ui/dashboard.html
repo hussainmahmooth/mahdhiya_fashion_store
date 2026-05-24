@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdhiya Fashion UI Dashboard</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a365d;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c5282;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-color: #3182ce;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            margin: 0;
+            color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mahdhiya Fashion UI Screens</h1>
+    <div class="grid">
+        <a href="splash.html" class="card"><h2>Splash Screen</h2></a>
+        <a href="login.html" class="card"><h2>Login Page</h2></a>
+        <a href="register.html" class="card"><h2>Register Page</h2></a>
+        <a href="home.html" class="card"><h2>Home Page</h2></a>
+        <a href="product_listing.html" class="card"><h2>Product Listing</h2></a>
+        <a href="product_detail.html" class="card"><h2>Product Detail</h2></a>
+        <a href="search.html" class="card"><h2>Search & Discovery</h2></a>
+        <a href="wishlist.html" class="card"><h2>Wishlist</h2></a>
+        <a href="cart.html" class="card"><h2>Shopping Cart</h2></a>
+        <a href="checkout.html" class="card"><h2>Checkout</h2></a>
+        <a href="profile.html" class="card"><h2>Profile</h2></a>
+        <a href="settings.html" class="card"><h2>Settings</h2></a>
+        <a href="order_confirmation.html" class="card"><h2>Order Confirmation</h2></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "945946832817",
+    "project_id": "mahdhiya-fashion-store",
+    "storage_bucket": "mahdhiya-fashion-store.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945946832817:android:711e945656bbcaf221d790",
+        "android_client_info": {
+          "package_name": "com.example.mahdhiya_fashion_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945946832817-b94s2tldo6nt7copnh4s6fq17u67hhst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YO7MmB6pNT3e5teOUvHHwcn_VK85rpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945946832817-b94s2tldo6nt7copnh4s6fq17u67hhst.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "945946832817-vl4ltii10kiq5vc02ne8kgf5kn5r23iq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mahdhiyaFashionStore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

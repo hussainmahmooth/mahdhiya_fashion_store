@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#e4e2e1",
+            "surface-container-highest": "#e4e2e1",
+            "on-primary-fixed-variant": "#343d96",
+            "surface-container-high": "#eae8e7",
+            "primary-container": "#1a237e",
+            "secondary-container": "#9ae1ff",
+            "on-surface-variant": "#454652",
+            "surface-container-low": "#f6f3f2",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#004d62",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1b1c1c",
+            "secondary-fixed": "#baeaff",
+            "on-tertiary-fixed-variant": "#1d4d53",
+            "surface-bright": "#fbf9f8",
+            "inverse-primary": "#bdc2ff",
+            "surface-tint": "#4c56af",
+            "primary": "#000666",
+            "on-primary": "#ffffff",
+            "surface-container": "#f0eded",
+            "on-background": "#1b1c1c",
+            "on-secondary-fixed": "#001f29",
+            "inverse-surface": "#303030",
+            "outline": "#767683",
+            "tertiary-fixed": "#bbebf1",
+            "error": "#ba1a1a",
+            "tertiary-container": "#00363b",
+            "secondary-fixed-dim": "#89d0ed",
+            "on-primary-fixed": "#000767",
+            "surface": "#fbf9f8",
+            "inverse-on-surface": "#f3f0f0",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#9fcfd5",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#8690ee",
+            "error-container": "#ffdad6",
+            "outline-variant": "#c6c5d4",
+            "on-secondary": "#ffffff",
+            "secondary": "#0c6780",
+            "surface-dim": "#dcd9d9",
+            "on-tertiary-container": "#71a0a5",
+            "on-secondary-container": "#09657f",
+            "primary-fixed": "#e0e0ff",
+            "on-tertiary-fixed": "#001f23",
+            "background": "#fbf9f8",
+            "tertiary": "#001f22",
+            "primary-fixed-dim": "#bdc2ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "max_width": "1280px",
+            "sm": "12px",
+            "margin": "auto",
+            "base": "8px",
+            "xs": "4px",
+            "gutter": "24px",
+            "md": "24px",
+            "xl": "80px",
+            "lg": "48px"
+          },
+          "fontFamily": {
+            "headline-lg": ["Noto Serif"],
+            "body-sm": ["Inter"],
+            "display-lg": ["Noto Serif"],
+            "body-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-md": ["Noto Serif"],
+            "display-md": ["Noto Serif"],
+            "label-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+            "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+            "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-sm": ["10px", {"lineHeight": "1", "fontWeight": "500"}],
+            "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+            "display-md": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-md": ["12px", {"lineHeight": "1", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .tonal-shift {
+      background-image: linear-gradient(to bottom, rgba(26, 35, 126, 0.02), rgba(26, 35, 126, 0.05));
+    }
+    .product-grid-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen font-body-md">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 border-b border-blue-50/50 dark:border-indigo-900/20 shadow-[0_2px_12px_rgba(26,35,126,0.03)]">
+<div class="flex items-center gap-4">
+<button class="text-indigo-900 dark:text-indigo-100 active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-serif font-bold tracking-widest uppercase text-indigo-950 dark:text-indigo-50">Mahdhiya Fashion</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-indigo-900 dark:text-indigo-100 active:scale-95 duration-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<main class="product-grid-container px-4 pb-32">
+<!-- Page Header & Filters -->
+<section class="py-8 space-y-6">
+<div class="flex flex-col items-center justify-center text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Dresses</h2>
+<p class="font-body-sm text-body-sm text-outline mt-2">Elevated essentials for every occasion</p>
+</div>
+<!-- Filter/Sort Toolbar -->
+<div class="flex items-center justify-between py-4 border-y border-surface-container-low mt-4">
+<div class="flex gap-2">
+<button class="flex items-center gap-2 px-4 py-2 bg-blue-50/50 rounded-full border border-sky-100 text-secondary hover:bg-blue-100 transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="font-label-md text-label-md">Filter</span>
+</button>
+<button class="hidden md:flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-full text-on-surface-variant hover:border-secondary transition-colors">
+<span class="font-label-md text-label-md">Category</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="hidden sm:block font-label-md text-label-md text-outline uppercase tracking-wider">Sort By</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-full text-on-surface-variant">
+<span class="font-label-md text-label-md">Newest</span>
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Aura Silk Midi" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="elegant woman wearing a flowing silk midi dress in soft champagne color standing in a sunlit minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe6lCae4DM0NVy8YGFvaIbCyCzjZRK7fpODkWrs9IItS78vQFYwl0Ul5XjdcBhbGbiA3l97SugazzqEIdjV5LBwMcfO793i85w_dCm0M0rLZjCnICiA5K5RAKHFYKL2p0zHOnFB14fHgCK_2p1cZ-t5CdI82RfepWirfrjryQ1_D1eNJbUt4LLI-_hafiUhoC3OFtNYmsRDBLma8ojUJ0ptD20TFmcicqYaJBjURwy38YlOFHJ-lBzOt6jU9sWQZJ5Br3st8xlh8Cw"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-indigo-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Aura Silk Midi</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$240.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Midnight Velvet Gala" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="deep navy velvet evening gown on a mannequin in a luxury boutique with moody cinematic lighting and blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghvYhe8yvfx9UmghmqlLNs3037x7HoCKLwnDQEPcX-oxPTYvvOOQSvmY8gT_NxQo1jd5L7M3iR1c_IvhbT5QIjKDP8rElK45vLJERXHvKRDom0iCChAWNQxwTp2IrIQCq5PQNDwptfHrmqXQGPkEQRzOW6boIOyz5JyhdiZSmv5rRNPj7Pk4vBCROuzIW9OLkDjkyNdmJJHiqBKIHH1FcYVoPN58NzHwAUWlcfl1vOGhmtlBn7bkNw8tbG8xuxabcsopYDeHYHjRG"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Midnight Velvet Gala</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$385.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Ethereal Linen Day" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="soft blue linen sun dress hanging on a wooden rail against a white textured wall with natural window shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEeu74MWZmlG8nS86tjvYDADAWCypfel0OlizIjkd4j6Eot9Gz1ZTswsCJH2hqoRzl2FqGXVi2Doog48p1Q5pVtZ_xzbYl6QS-4auDPYPgIiSAy3InMakIesdHfMJBI9B4dqHn43RCpzmmAqrR-ZuKqKhv1vyARDwn-mJYVqjAUQtTzmliEKw72OHY8AoA0DLHs6ZBAoUQ7_NtqwqcWqa7kbgmKg8YOJH4gaknKr6QBpkNv5ueHElB1FBMuzQCTeekmxPDpg7RayaJ"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Ethereal Linen Day</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$155.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Sapphire Satin Wrap" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up detail of royal blue satin fabric with elegant drapes and soft sheen in a high-end fashion setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsww9PUV1rsJlGHbDJlTixjUeuxqRIv5LK2n-a4xVqjdPR9MVS_td6_S8n9w9Oo73qnhSN2axyQC0ZeG4YBq8faN6S6ha8c6H9OpdfRoXfxWaLhVhKbfCaD_7Cuiu5C4IG4OSyQoCbJTg5ndPXg4iYcGsoZ7bkPOdwqLtJtrtzGiBra9jnr5z-gSOgTBZhycV_kt51DHIn_6xHP9gn1W-YMLr2xGHGQjv_A6bKQ5feFWZTZKEwgG_KmxcqGMFbrvJEVcJM4Bb0eTno"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Sapphire Satin Wrap</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$210.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Celestial Pleated Gown" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Light blue pleated gown blowing in the wind during a desert sunset photoshoot with soft ethereal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAxaaryRi4w1HKMb_kG3YwkkBbAxbuFlbM2Cg55-Yxx5wNFmzMxidpMOlxKmoyYt3i-jCMpGAcAu5JPiYIKLFS3ieyXyJbMuEdQa_FPWELamizAH2kAi5IxxnZBLiBfrzh-X7zrLgNTKLlBeFviIDYYBa3fcCVvv7nFhZobkbrDc92nxvRdpd_tm-8-4s1Le6uXhJXBJkf379l9qJ_hUAjNo2DqqT0drdGl7_4fv7Ozn-JxByKGDkGZz829dt6DFQP0C_q47DDh9gE"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Celestial Pleated Gown</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$450.00</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface-container-low shadow-[0_4px_12px_rgba(26,35,126,0.03)] transition-all duration-300 group-hover:shadow-[0_8px_24px_rgba(26,35,126,0.08)]">
+<img alt="Chambray Summer Tunic" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="casual light blue chambray dress on a model walking by a coastal Mediterranean village with bright sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgnKrSfkV0yC0QG9Ab1sZjt72Km3leirXQnnzE4I3_ty0_B-alUgkq6qWUCILFr5HkjDC_SWCPdPPcC36f7itomrt9bbprgVtN5Av2rnlLTbX8dnIy10jHiAbMeCfxAafSdYmrjwlwsKETXMw1MgKbp9Nqug7pNLyTRiwf5JWxJjmcy41ActnfESqVopUpgQO3bFEPhsR98IOR7Wl4IVw6hdxc5Zw0T13P4Tc3eq1usIO03A9heiNY4ZeYF6260NSEtxDA1oFreT4v"/>
+<button class="absolute top-4 right-4 h-10 w-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-secondary shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-headline-md text-headline-md text-primary truncate px-2">Chambray Summer Tunic</h3>
+<p class="font-label-lg text-label-lg text-secondary mt-1">$125.00</p>
+</div>
+</div>
+</section>
+<!-- Pagination / Load More -->
+<div class="flex justify-center py-12">
+<button class="px-10 py-4 border border-secondary text-secondary font-label-lg text-label-lg rounded-full hover:bg-secondary hover:text-white transition-all active:scale-95">
+        Explore More
+      </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-[0_-8px_24px_rgba(26,35,126,0.05)]">
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-indigo-900 dark:text-white bg-blue-50/80 dark:bg-indigo-800/30 rounded-xl px-4 py-1 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-indigo-300 dark:text-indigo-600 hover:text-indigo-600 active:scale-90 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-serif text-[10px] font-medium uppercase tracking-tighter mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
